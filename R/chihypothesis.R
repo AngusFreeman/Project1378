@@ -11,4 +11,3 @@ chihypothesis <- function(dataset) {
   cat("H0 -> There is no association",
       "H1 -> There is association", sep = "\n")
 }
-chihypothesis(project_data)

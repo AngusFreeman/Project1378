@@ -1,14 +1,14 @@
-#' Chi decision
+#' Lm decision
 #'
 #' @param dataset The data set you are testing
-#' @description Chooses whether or not to reject the null hypothesis based upon the p-value of the chi squared test.
+#' @description Chooses whether or not to reject the null hypothesis based upon the p-value of the linear model test.
 #'
 #' @return
 #' @export
 #'
 #' @examples
-chidecision <- function(dataset) {
-  if(chifit(dataset)[[3]] < 0.05) {
+lmdecision <- function(dataset) {
+  if(lmfit(dataset)[4] < 0.05) {
     print("Decision: Reject null hypothesis")
   } else {
     print("Decision: Do not reject null hypothesis")
