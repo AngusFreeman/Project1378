@@ -40,7 +40,7 @@ devtools::install_github("AngusFreeman/Project1378")
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
-#library(Project1378)
+##library(Project1378)
 ## basic example code
 ```
 

@@ -4,6 +4,8 @@
 # Project1378
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/AngusFreeman/Project1378/workflows/R-CMD-check/badge.svg)](https://github.com/AngusFreeman/Project1378/actions)
 <!-- badges: end -->
 
 The goal of Project1378 is to provide functions to use to do complete
@@ -30,7 +32,7 @@ devtools::install_github("AngusFreeman/Project1378")
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
-#library(Project1378)
+##library(Project1378)
 ## basic example code
 ```
 
