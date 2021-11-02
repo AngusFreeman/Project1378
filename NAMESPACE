@@ -1,3 +1,8 @@
 exportPattern("^[[:alpha:]]+")
 importFrom("stats", "chisq.test")
 export(chiassumptions)
+export(chihypothesis)
+export(chiconclusion)
+export(chidecision)
+export(chifit)
+export(mychitest)
