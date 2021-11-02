@@ -7,7 +7,7 @@
 chiconclusion(dataset)
 }
 \arguments{
-\item{chifit1}{The list of output created by the chifit function}
+\item{dataset}{The data set you are testing}
 }
 \value{
 

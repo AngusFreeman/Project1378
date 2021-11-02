@@ -1,6 +1,6 @@
 #' Title
 #'
-#' @param chifit1 The list of output created by the chifit function
+#' @param dataset The data set you are testing
 #' @description Chooses whether or not to reject the null hypothesis based upon the p-value of the chi squared test.
 #'
 #' @return

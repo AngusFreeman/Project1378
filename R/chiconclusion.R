@@ -1,6 +1,6 @@
 #' Chi Conclusion
 #'
-#' @param chifit1 The list of output created by the chifit function
+#' @param dataset The data set you are testing
 #' @description Gives a conclusion for the chi squared test based upon the p-value obtained.
 #'
 #' @return
