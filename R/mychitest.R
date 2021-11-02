@@ -15,13 +15,11 @@ mychitest <- function(dataset) {
   chiassumptions(dataset)
 
   cat("", "Step 3: Gathering relevent data using the chisq.test function, which is summarised in the list below.", "", sep = "\n")
-  chifit1 <- chifit(dataset)
-  print(chifit1)
+  print(chifit(dataset))
 
   cat("", "Step 4: Deciding the test result.", sep = "\n")
-  chidecision(chifit1)
+  chidecision(dataset)
 
   cat("", "Step 5: Concluding the test.", sep = "\n")
-  chiconclusion(chifit1)
+  chiconclusion(dataset)
 }
-mychitest(project_data)

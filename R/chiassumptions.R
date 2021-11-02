@@ -6,7 +6,7 @@
 #' @return
 #' @export
 #'
-#' @examples chiassumptions(project_data)
+#' @examples
 chiassumptions <- function(dataset) {
   cat("Both Variables are categorical",
       "All observations are independent",
@@ -17,4 +17,3 @@ chiassumptions <- function(dataset) {
   print(chisq.test(dataset$gender, dataset$phys, correct = FALSE)$expected)
 
 }
-chiassumptions(project_data)
