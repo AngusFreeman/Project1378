@@ -1,3 +1,12 @@
+#' Full Chiq Test
+#'
+#' @param dataset The data set you wish to test
+#' @description Provides a full chi squared test, with hypotheses, assumptions, a decision and a conclusion.
+#'
+#' @return
+#' @export
+#'
+#' @examples
 mychitest <- function(dataset) {
   cat("Step 1: Stating the test hypotheses.", sep = "\n")
   chihypothesis(dataset)

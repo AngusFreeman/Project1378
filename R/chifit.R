@@ -1,3 +1,12 @@
+#' Chi Fit
+#'
+#' @param dataset The data set you are testing
+#' @description Applies the chi squared test and returns relevant ouput in a list.
+#'
+#' @return
+#' @export
+#'
+#' @examples
 chifit <- function(dataset) {
   chimodel <- chisq.test(dataset$gender, dataset$phys, correct = FALSE)
 

@@ -1,3 +1,12 @@
+#' Chi Assumptions
+#'
+#' @param dataset The data set you are testing
+#' @description Prints the assumptions for the Chi Squared test.
+#'
+#' @return
+#' @export
+#'
+#' @examples chiassumptions(project_data)
 chiassumptions <- function(dataset) {
   cat("Both Variables are categorical",
       "All observations are independent",

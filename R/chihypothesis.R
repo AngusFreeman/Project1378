@@ -1,7 +1,7 @@
 #' Chi Hypotheses
 #'
-#' @param dataset Choose the data set to use
-#' @description Prints the test hypotheses for the Chi Squared test.
+#' @param dataset The data set you are testing
+#' @description Prints the null and alternative hypotheses for the Chi Squared test.
 #'
 #' @return
 #' @export
