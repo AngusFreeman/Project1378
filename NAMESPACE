@@ -1,5 +1,6 @@
 exportPattern("^[[:alpha:]]+")
 importFrom("stats", "chisq.test")
+import("gridExtra", "grid.arrange")
 export(chiassumptions)
 export(chihypothesis)
 export(chiconclusion)
