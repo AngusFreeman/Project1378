@@ -6,4 +6,4 @@
 #' \describe{
 #'   \item{height}{height of the person, in cm}
 #' }
-"error_dataset"
+"errordataset"
