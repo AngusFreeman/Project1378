@@ -6,7 +6,7 @@
 #' @return
 #' @export
 #'
-#' @examples
+#' @examples mylmtest(project)
 mylmtest <- function(dataset) {
   cat("Step 1: Stating the test hypotheses.", sep = "\n")
   lmhypothesis(dataset)

@@ -15,3 +15,6 @@ tfit(dataset)
 \description{
 Applies the t-test and returns relevant ouput in a list.
 }
+\examples{
+tfit(project)
+}

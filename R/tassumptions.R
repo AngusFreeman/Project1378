@@ -6,7 +6,7 @@
 #' @return
 #' @export
 #'
-#' @examples
+#' @examples tassumptions(project)
 tassumptions <- function(dataset) {
   tplota <- ggplot(data = filter(dataset, gender == "Female"),
                    mapping = aes(x = height)) +

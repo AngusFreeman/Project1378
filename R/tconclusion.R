@@ -6,7 +6,7 @@
 #' @return
 #' @export
 #'
-#' @examples
+#' @examples tconclusion(project)
 tconclusion <- function(dataset) {
   if(tfit(dataset)[[3]] < 0.05) {
     paste("Conclusion: Since the p-value is less than 0.05, i.e. 0 does not lie withinn the 95% confidence interval for the difference in mean, it is statistically unlikely that the null hypothesis is correct, so we reject the null hypothesis in favour of the alternative hypothesis and assume that there is a difference in mean height between gender.")

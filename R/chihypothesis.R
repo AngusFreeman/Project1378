@@ -6,7 +6,7 @@
 #' @return
 #' @export
 #'
-#' @examples
+#' @examples chihypothesis(project)
 chihypothesis <- function(dataset) {
   cat("H0 -> There is no association",
       "H1 -> There is association", sep = "\n")

@@ -15,3 +15,6 @@ lmhypothesis(dataset)
 \description{
 Prints the null and alternative hypotheses for the linear model test.
 }
+\examples{
+lmhypothesis(project)
+}

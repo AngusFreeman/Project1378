@@ -14,3 +14,6 @@ LazyData: true
 URL: https://github.com/AngusFreeman/Project1378
 BugReports: https://github.com/AngusFreeman/Project1378/issues
 RoxygenNote: 7.1.1
+Import: gridExtra
+Depends: 
+    R (>= 2.10)

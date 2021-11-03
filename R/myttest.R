@@ -6,7 +6,7 @@
 #' @return
 #' @export
 #'
-#' @examples
+#' @examples myttest(project)
 myttest <- function(dataset) {
   cat("Step 1: Stating the test hypotheses.", sep = "\n")
   thypothesis(dataset)

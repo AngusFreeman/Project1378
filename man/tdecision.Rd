@@ -15,3 +15,6 @@ tdecision(dataset)
 \description{
 Chooses whether or not to reject the null hypothesis based upon the p-value of the t-test.
 }
+\examples{
+tdecision(project)
+}

@@ -6,9 +6,9 @@
 #' @return
 #' @export
 #'
-#' @examples
-lmfit <- function(file_name) {
-  lmmodel <- lm(weight~height, data = project_data)
+#' @examples lmfit(project)
+lmfit <- function(dataset) {
+  lmmodel <- lm(weight~height, dataset)
 
   lmfit1 <- list(
     summary(lmmodel)$coefficients[2,1],

@@ -15,3 +15,6 @@ chiconclusion(dataset)
 \description{
 Gives a conclusion for the chi squared test based upon the p-value obtained.
 }
+\examples{
+chiconclusion(project)
+}

@@ -6,7 +6,7 @@
 #' @return
 #' @export
 #'
-#' @examples
+#' @examples tfit(project)
 tfit <- function(dataset) {
   tmodel <- t.test(filter(dataset, gender == "Female")$height, filter(dataset, gender == "Male")$height, var.equal = TRUE)
 

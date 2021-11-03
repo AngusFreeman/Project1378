@@ -6,7 +6,7 @@
 #' @return
 #' @export
 #'
-#' @examples
+#' @examples chidecision(project)
 chidecision <- function(dataset) {
   if(chifit(dataset)[[3]] < 0.05) {
     print("Decision: Reject null hypothesis")

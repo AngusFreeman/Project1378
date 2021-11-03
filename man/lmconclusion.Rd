@@ -15,3 +15,6 @@ lmconclusion(dataset)
 \description{
 Gives a conclusion for the linear model test based upon the p-value obtained.
 }
+\examples{
+lmconclusion(project)
+}

@@ -6,7 +6,7 @@
 #' @return
 #' @export
 #'
-#' @examples
+#' @examples lmdecision(project)
 lmdecision <- function(dataset) {
   if(lmfit(dataset)[4] < 0.05) {
     print("Decision: Reject null hypothesis")

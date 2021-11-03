@@ -15,3 +15,6 @@ chidecision(dataset)
 \description{
 Chooses whether or not to reject the null hypothesis based upon the p-value of the chi squared test.
 }
+\examples{
+chidecision(project)
+}

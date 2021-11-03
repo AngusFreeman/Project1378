@@ -15,3 +15,6 @@ lmassumptions(dataset)
 \description{
 Prints the assumptions for the linear model test.
 }
+\examples{
+lmassumptions(project)
+}

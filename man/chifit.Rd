@@ -15,3 +15,6 @@ chifit(dataset)
 \description{
 Applies the chi squared test and returns relevant ouput in a list.
 }
+\examples{
+chifit(project)
+}

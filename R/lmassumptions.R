@@ -6,7 +6,7 @@
 #' @return
 #' @export
 #'
-#' @examples
+#' @examples lmassumptions(project)
 lmassumptions <- function(dataset) {
   plota <- ggplot(data = dataset,
                   mapping = aes(x = height, y = weight)) +

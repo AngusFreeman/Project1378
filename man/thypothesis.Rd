@@ -15,3 +15,6 @@ thypothesis(dataset)
 \description{
 Prints the null and alternative hypotheses for the t-test.
 }
+\examples{
+thypothesis(project)
+}

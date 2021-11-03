@@ -6,8 +6,8 @@
 #' @return
 #' @export
 #'
-#' @examples
+#' @examples lmhypothesis(project)
 lmhypothesis <- function(dataset) {
-  cat("H0 -> β = 0",
-      "H1 -> β ≠ 0", sep = "\n")
+  cat("H0 -> Beta = 0",
+      "H1 -> Beta != 0", sep = "\n")
 }

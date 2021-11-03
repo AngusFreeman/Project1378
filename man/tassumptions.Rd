@@ -15,3 +15,6 @@ tassumptions(dataset)
 \description{
 Prints the assumptions for the t-test.
 }
+\examples{
+tassumptions(project)
+}

@@ -6,7 +6,7 @@
 #' @return
 #' @export
 #'
-#' @examples
+#' @examples chiassumptions(project)
 chiassumptions <- function(dataset) {
   cat("Both Variables are categorical",
       "All observations are independent",

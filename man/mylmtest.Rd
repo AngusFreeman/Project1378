@@ -15,3 +15,6 @@ mylmtest(dataset)
 \description{
 Provides a full linear model test, with hypotheses, assumptions, a decision and a conclusion.
 }
+\examples{
+mylmtest(project)
+}

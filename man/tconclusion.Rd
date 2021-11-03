@@ -15,3 +15,6 @@ tconclusion(dataset)
 \description{
 Gives a conclusion for the t-test based upon the p-value obtained.
 }
+\examples{
+tconclusion(project)
+}

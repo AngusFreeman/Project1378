@@ -15,3 +15,6 @@ myttest(dataset)
 \description{
 Provides a full t-test, with hypotheses, assumptions, a decision and a conclusion.
 }
+\examples{
+myttest(project)
+}

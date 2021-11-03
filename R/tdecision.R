@@ -6,7 +6,7 @@
 #' @return
 #' @export
 #'
-#' @examples
+#' @examples tdecision(project)
 tdecision <- function(dataset) {
   if(tfit(dataset)[[3]] < 0.05) {
     print("Decision: Reject null hypothesis")

@@ -4,7 +4,7 @@
 \alias{lmfit}
 \title{Lm fit}
 \usage{
-lmfit(file_name)
+lmfit(dataset)
 }
 \arguments{
 \item{dataset}{The data set you are testing}
@@ -14,4 +14,7 @@ lmfit(file_name)
 }
 \description{
 Applies the linear model test and returns relevant ouput in a list.
+}
+\examples{
+lmfit(project)
 }

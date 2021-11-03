@@ -2,7 +2,7 @@
 % Please edit documentation in R/mychitest.R
 \name{mychitest}
 \alias{mychitest}
-\title{Full Chiq Test}
+\title{Full Chi Squared Test}
 \usage{
 mychitest(dataset)
 }
@@ -14,4 +14,7 @@ mychitest(dataset)
 }
 \description{
 Provides a full chi squared test, with hypotheses, assumptions, a decision and a conclusion.
+}
+\examples{
+mychitest(project)
 }

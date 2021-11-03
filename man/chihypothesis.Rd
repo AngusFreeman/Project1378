@@ -15,3 +15,6 @@ chihypothesis(dataset)
 \description{
 Prints the null and alternative hypotheses for the Chi Squared test.
 }
+\examples{
+chihypothesis(project)
+}

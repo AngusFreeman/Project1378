@@ -15,3 +15,6 @@ chiassumptions(dataset)
 \description{
 Prints the assumptions for the Chi Squared test.
 }
+\examples{
+chiassumptions(project)
+}

@@ -6,7 +6,7 @@
 #' @return
 #' @export
 #'
-#' @examples
+#' @examples chifit(project)
 chifit <- function(dataset) {
   chimodel <- chisq.test(dataset$gender, dataset$phys, correct = FALSE)
 
