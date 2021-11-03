@@ -8,7 +8,7 @@
 #'
 #' @examples
 tfit <- function(dataset) {
-  tmodel <- t.test(filter(dataset, gender == "Female")$height, filter(dataset, gender == "Male")$height)
+  tmodel <- t.test(filter(dataset, gender == "Female")$height, filter(dataset, gender == "Male")$height, var.equal = TRUE)
 
   tfit1 <- list(
     tmodel[[1]],

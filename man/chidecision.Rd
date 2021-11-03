@@ -2,7 +2,7 @@
 % Please edit documentation in R/chidecision.R
 \name{chidecision}
 \alias{chidecision}
-\title{Title}
+\title{Chi decision}
 \usage{
 chidecision(dataset)
 }
