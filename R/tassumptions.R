@@ -5,15 +5,16 @@
 #'
 #' @return
 #' @export
+#' @import ggplot2
 #'
 #' @examples tassumptions(project)
 tassumptions <- function(dataset) {
-  tplota <- ggplot(data = dplyr::filter(dataset, gender == "Female"),
+  tplota <- ggplot2::ggplot(data = dplyr::filter(dataset, gender == "Female"),
                    mapping = aes(x = height)) +
     ggtitle("Distribution of the height of Females") +
     geom_histogram(bins = 75)
 
-  tplotb <- ggplot(data = dplyr::filter(dataset, gender == "Male"),
+  tplotb <- ggplot2::ggplot(data = dplyr::filter(dataset, gender == "Male"),
                    mapping = aes(x = height)) +
     ggtitle("Distribution of the height of Males") +
     geom_histogram(bins = 75)

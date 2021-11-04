@@ -26,27 +26,21 @@ The goal of Project1378 is to provide functions to use to do complete statistica
 You can install the released version of Project1378 from [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
-#install.packages("Project1378")
+install.packages("Project1378")
 ```
 
 And the development version from [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("devtools")
-#devtools::install_github("AngusFreeman/Project1378")
+install.packages("devtools")
+devtools::install_github("AngusFreeman/Project1378")
 ```
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
-
 ```{r example}
-##library(Project1378)
-## basic example code
+library(Project1378)
+myttest(project)
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
 
-```{r cars}
-#summary(cars)
-```
 

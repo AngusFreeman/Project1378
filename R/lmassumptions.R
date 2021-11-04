@@ -5,20 +5,21 @@
 #'
 #' @return
 #' @export
+#' @import ggplot2
 #'
 #' @examples lmassumptions(project)
 lmassumptions <- function(dataset) {
-  plota <- ggplot(data = dataset,
+  plota <- ggplot2::ggplot(data = dataset,
                   mapping = aes(x = height, y = weight)) +
     ggtitle("Y vs X") +
     geom_smooth()
 
-  plotb <- ggplot(data = lm(weight~height, data = dataset),
+  plotb <- ggplot2::ggplot(data = lm(weight~height, data = dataset),
                   mapping = aes(x = .fitted, y = .resid)) +
     ggtitle("Residuals vs Fitted Values") +
     geom_point()
 
-  plotc <- ggplot(data = lm(weight~height, data = dataset),
+  plotc <- ggplot2::ggplot(data = lm(weight~height, data = dataset),
                   mapping = aes(x = .resid)) +
     ggtitle("Residuals Histogram") +
     geom_histogram(bins = 150)
