@@ -21,8 +21,8 @@ tassumptions <- function(dataset) {
 
   grid.arrange(tplota, tplotb, ncol = 1)
 
-  cat("All observations are independent",
-      "Both samples are approximately normally distributed",
-      "Both samples have approximately the same variance",
-      "Both samples were obtained using a random sampling method", sep = "\n")
+  cat("1. All observations are independent",
+      "2. Both samples are approximately normally distributed",
+      "3. Both samples have approximately the same variance",
+      "4. Both samples were obtained using a random sampling method", sep = "\n")
 }

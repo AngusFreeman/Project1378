@@ -25,8 +25,8 @@ lmassumptions <- function(dataset) {
 
   grid.arrange(plota, plotb, plotc, ncol = 3)
 
-  cat("The relationship between the variables can be described by a linear equation",
-      "The residuals are independent of each other",
-      "The residuals have equal variance",
-      "The distribution of the residuals is normally distributed", sep = "\n")
+  cat("1. The relationship between the variables can be described by a linear equation",
+      "2. The residuals are independent of each other",
+      "3. The residuals have equal variance",
+      "4. The distribution of the residuals is normally distributed", sep = "\n")
 }
