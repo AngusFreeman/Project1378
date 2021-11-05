@@ -8,10 +8,6 @@ params:
 bibliography: A3referencelist.bib
 ---
 
-```{r,echo=FALSE,message=FALSE,warning=FALSE}
-# Set so that long lines in R will be wrapped:
-knitr::opts_chunk$set(tidy.opts=list(width.cutoff=80), tidy=TRUE)
-```
 ```{r echo = FALSE, warning = FALSE, message = FALSE, output = FALSE}
 library(tidyverse)
 ```
@@ -159,7 +155,7 @@ chidecision(mydata)
 lmfit(mydata)[4]
 ```
 
-```{r echo = FALSE, warning = FALSE}
+```{r echo = FALSE, warning = FALSE, tidy=TRUE, tidy.opts=list(width.cutoff=10)}
 lmconclusion(mydata)
 ```
 
