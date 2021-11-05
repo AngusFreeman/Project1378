@@ -5,8 +5,6 @@
 #'
 #' @return The assumptions for the linear model test.
 #' @export
-#' @importFrom ggplot2 ggplot
-#' @importFrom ggplot2 aes
 #' @importFrom gridExtra grid.arrange
 #' @import ggplot2
 #'

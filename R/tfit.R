@@ -1,7 +1,7 @@
 #' T fit
 #'
 #' @param dataset The data set you are testing
-#' @description Applies the t-test and returns relevant ouput in a list.
+#' @description Applies the t-test and returns relevant output in a list.
 #'
 #' @return Relevent t-test statistics.
 #' @export

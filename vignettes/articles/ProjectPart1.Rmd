@@ -1,0 +1,184 @@
+---
+title: "Stat1378 Project Part 1"
+author: "Angus Freeman"
+date: "03/11/2021"
+output: html_document
+params:
+  data: "project.csv"
+bibliography: A3referencelist.bib
+---
+
+```{r,echo=FALSE,message=FALSE,warning=FALSE}
+# Set so that long lines in R will be wrapped:
+knitr::opts_chunk$set(tidy.opts=list(width.cutoff=80), tidy=TRUE)
+```
+```{r echo = FALSE, warning = FALSE, message = FALSE, output = FALSE}
+library(tidyverse)
+```
+```{r echo = FALSE, warning = FALSE, message = FALSE}
+mydata <- read.csv(params$data)
+```
+## Using statistical tests to answer research questions about a group of 1000 individuals.
+&nbsp;
+ 
+## 1 Abstract 
+
+We obtained a data set with observations of 1000 individuals aged 26-45, with information on their gender, height, weight and amount of physical activity. We investigated whether certain relationships exist between some of these variables, and found a significant correlation between height and weight using a linear model, that men were statistically taller than women using a t-test, and that there was no association between gender and amount of physical activity.
+
+&nbsp;
+
+## 2 Introduction
+
+We were interested in testing the following relationships:
+
+  1. Is there a linear relationship between height and weight?
+  2. Is the mean height of males and females the same?
+  3. Is there any association between gender and the amount of physical activity?
+  
+We investigated these questions in a cohort of 1000 individuals ages 26-45 with whom we had information on their gender, height, weight and physical activity.
+
+&nbsp;
+
+## 3 Methods
+
+We obtained a data set with observations from 1000 individuals aged 26-45 with information on their gender (male, female), height (in cm), weight (in kg), and amount of physical activity (none, moderate, intense).
+
+### Linear Model
+
+To determine if there exists a relationship between height and weight, we performed a linear regression using the following model:
+
+&nbsp;
+<center>
+Height~$i$~ = $\alpha$ + $\beta$ * Weight~$i$~ + $\epsilon$~$i$~
+</center>
+&nbsp;
+
+where $\epsilon$~$i$~ ~ $N$(0,$\sigma^2$), and $i$ is from 1, ..., 1000. To test for significance of the relationship we used the following test statistic:
+
+&nbsp;
+<center>
+$t$ = $\frac{\hat{\beta}}{SE}$
+</center>
+&nbsp;
+
+where $\hat{\beta}$ is the estimated slope coefficient and SE is the standard error.
+
+&nbsp;
+
+@LMBook
+
+### T-test
+
+To determine if the mean height of males and females was the same, we used a two sample, equal variance t-test with the following test statistic:
+
+&nbsp;
+<center>
+$t$ = $\frac{\bar{x_{1}} - \bar{x_{2}}}{s_{p}\sqrt{\frac{1}{n_{1}}-\frac{1}{n_2}}}$
+</center>
+&nbsp;
+ 
+where $\bar{x}$ is the sample mean of the population, $s_{p}$ is the pooled variance, and n is the number of observations in the sample.
+
+&nbsp;
+
+@TTestArticle
+
+### Chi-Squared Test
+
+To determine if there was any association between gender and physical activity, we used a chi-squared test with no continuity correction, with the following chi-square statistic:
+
+&nbsp;
+<center>
+$\sum_{i = 1}^{n}$$\frac{(O-E)^2}{E}$
+</center>
+&nbsp;
+
+where n is the number of observations, O is the observed value, and E is the expected value.
+
+
+In order to perform the necessary tests for these research questions, the Project1378 package was used, available from: https://github.com/AngusFreeman/Project1378.
+
+```{r echo = FALSE, warning = FALSE, message = FALSE, output = FALSE}
+#devtools::install_github("AngusFreeman/Project1378") to install from github
+library(Project1378)
+```
+
+@ChiBook
+
+## 4 Results
+
+### Linear Model
+```{r echo = FALSE, warning = FALSE, message = FALSE}
+lmassumptions(mydata)
+```
+1. The first graph shows that it is likely that the relationship can be described by a linear equation.
+2. The second graph shows that it is likely that the residuals are independent from each other and have equal variance.
+3. The third graph shows that the residuals are normally distributed.
+
+Since all assumptions are met we can assume the linear regression is accurate.
+```{r echo = FALSE, warning = FALSE}
+lmhypothesis(mydata)
+lmfit(mydata)
+lmdecision(mydata)
+```
+### T-Test
+```{r echo = FALSE, warning = FALSE}
+tassumptions(mydata)
+```
+1. The graphs show that both samples are approximately normally distributed, and that they have approximately equal variance.
+2. The data was collected using a random sampling method, and it was ensured that all observations are independent.
+
+Since all assumptions are met we can assume the t-test is accurate.
+```{r echo = FALSE, warning = FALSE}
+thypothesis(mydata)
+tfit(mydata)
+tdecision(mydata)
+```
+### Chi Squared Test
+```{r echo = FALSE, warning = FALSE}
+chiassumptions(mydata)
+```
+1. Gender and Physical activity measured by none, moderate and intense are both categorical variables.
+2. The categories of variables are mutually exclusive.
+3. The data collection ensured that all observations were independent.
+4. The expected value table show that the expected value is greater than 5 for at least 80% of the cells.
+
+Since all assumptions are met we can assume the chi-squared test is accurate.
+```{r echo = FALSE, warning = FALSE}
+chihypothesis(mydata)
+chifit(mydata)
+chidecision(mydata)
+```
+
+
+
+## 5 Conclusion
+
+### Linear Model
+```{r echo = FALSE, warning = FALSE}
+lmfit(mydata)[4]
+```
+
+```{r echo = FALSE, warning = FALSE}
+lmconclusion(mydata)
+```
+
+### T-Test
+```{r echo = FALSE, warning = FALSE}
+tfit(mydata)[3]
+```
+
+```{r echo = FALSE, warning = FALSE}
+tconclusion(mydata)
+```
+
+### Chi Squared - Test
+```{r echo = FALSE, warning = FALSE}
+chifit(mydata)[3]
+```
+
+```{r echo = FALSE, warning = FALSE}
+chiconclusion(mydata)
+```
+
+## 6 References

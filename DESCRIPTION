@@ -13,12 +13,16 @@ Encoding: UTF-8
 LazyData: true
 URL: https://github.com/AngusFreeman/Project1378
 BugReports: https://github.com/AngusFreeman/Project1378/issues
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
 Depends: R (>= 2.10)
 Suggests: 
     tidyverse,
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    dplyr,
+    knitr,
+    rmarkdown
 Config/testthat/edition: 3
 Imports:
     ggplot2,
     gridExtra
+VignetteBuilder: knitr

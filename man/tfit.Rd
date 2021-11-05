@@ -13,7 +13,7 @@ tfit(dataset)
 Relevent t-test statistics.
 }
 \description{
-Applies the t-test and returns relevant ouput in a list.
+Applies the t-test and returns relevant output in a list.
 }
 \examples{
 tfit(project)
