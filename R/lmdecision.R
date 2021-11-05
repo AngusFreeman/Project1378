@@ -3,7 +3,7 @@
 #' @param dataset The data set you are testing
 #' @description Chooses whether or not to reject the null hypothesis based upon the p-value of the linear model test.
 #'
-#' @return
+#' @return A decision for the linear model test.
 #' @export
 #'
 #' @examples lmdecision(project)

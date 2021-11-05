@@ -10,7 +10,7 @@ chiassumptions(dataset)
 \item{dataset}{The data set you are testing}
 }
 \value{
-
+The assumptions for the Chi Squared test.
 }
 \description{
 Prints the assumptions for the Chi Squared test.

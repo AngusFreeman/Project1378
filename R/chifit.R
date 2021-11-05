@@ -3,8 +3,9 @@
 #' @param dataset The data set you are testing
 #' @description Applies the chi squared test and returns relevant ouput in a list.
 #'
-#' @return
+#' @return Relevent Chi Statistics.
 #' @export
+#' @importFrom stats chisq.test
 #'
 #' @examples chifit(project)
 chifit <- function(dataset) {

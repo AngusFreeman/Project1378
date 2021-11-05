@@ -10,7 +10,7 @@ chiconclusion(dataset)
 \item{dataset}{The data set you are testing}
 }
 \value{
-
+Conclusion to the Chi Squared test.
 }
 \description{
 Gives a conclusion for the chi squared test based upon the p-value obtained.

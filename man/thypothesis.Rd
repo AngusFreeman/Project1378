@@ -10,7 +10,7 @@ thypothesis(dataset)
 \item{dataset}{The data set you are testing}
 }
 \value{
-
+Hypotheses for the t-test.
 }
 \description{
 Prints the null and alternative hypotheses for the t-test.

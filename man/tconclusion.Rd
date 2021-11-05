@@ -10,7 +10,7 @@ tconclusion(dataset)
 \item{dataset}{The data set you are testing}
 }
 \value{
-
+Conclusion for the t-test.
 }
 \description{
 Gives a conclusion for the t-test based upon the p-value obtained.

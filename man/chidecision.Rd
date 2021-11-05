@@ -10,7 +10,7 @@ chidecision(dataset)
 \item{dataset}{The data set you are testing}
 }
 \value{
-
+A decision for the Chi Squared test.
 }
 \description{
 Chooses whether or not to reject the null hypothesis based upon the p-value of the chi squared test.

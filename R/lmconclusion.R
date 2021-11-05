@@ -3,7 +3,7 @@
 #' @param dataset The data set you are testing
 #' @description Gives a conclusion for the linear model test based upon the p-value obtained.
 #'
-#' @return
+#' @return The conclusion for the linear model test.
 #' @export
 #'
 #' @examples lmconclusion(project)

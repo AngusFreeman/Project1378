@@ -10,7 +10,7 @@ lmassumptions(dataset)
 \item{dataset}{The data set you are testing}
 }
 \value{
-
+The assumptions for the linear model test.
 }
 \description{
 Prints the assumptions for the linear model test.

@@ -10,7 +10,7 @@ lmhypothesis(dataset)
 \item{dataset}{The data set you are testing}
 }
 \value{
-
+The hypotheses for the linear model test.
 }
 \description{
 Prints the null and alternative hypotheses for the linear model test.

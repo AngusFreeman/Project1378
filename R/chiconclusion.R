@@ -3,7 +3,7 @@
 #' @param dataset The data set you are testing
 #' @description Gives a conclusion for the chi squared test based upon the p-value obtained.
 #'
-#' @return
+#' @return Conclusion to the Chi Squared test.
 #' @export
 #'
 #' @examples chiconclusion(project)

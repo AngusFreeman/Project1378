@@ -3,9 +3,11 @@
 #' @param dataset The data set you are testing
 #' @description Prints the assumptions for the t-test.
 #'
-#' @return
+#' @return The assumptions for the t-test.
 #' @export
-#' @import ggplot2
+#' @importFrom ggplot2 ggplot
+#' @importFrom ggplot2 aes
+#'
 #'
 #' @examples tassumptions(project)
 tassumptions <- function(dataset) {

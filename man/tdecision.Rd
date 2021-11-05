@@ -10,7 +10,7 @@ tdecision(dataset)
 \item{dataset}{The data set you are testing}
 }
 \value{
-
+Decision for the t-test.
 }
 \description{
 Chooses whether or not to reject the null hypothesis based upon the p-value of the t-test.

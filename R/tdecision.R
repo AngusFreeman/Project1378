@@ -3,7 +3,7 @@
 #' @param dataset The data set you are testing
 #' @description Chooses whether or not to reject the null hypothesis based upon the p-value of the t-test.
 #'
-#' @return
+#' @return Decision for the t-test.
 #' @export
 #'
 #' @examples tdecision(project)

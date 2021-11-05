@@ -10,7 +10,7 @@ chihypothesis(dataset)
 \item{dataset}{The data set you are testing}
 }
 \value{
-
+The hypothesis for the Chi Squared test.
 }
 \description{
 Prints the null and alternative hypotheses for the Chi Squared test.

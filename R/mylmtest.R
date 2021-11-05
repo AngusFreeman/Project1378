@@ -3,7 +3,7 @@
 #' @param dataset The data set you wish to test
 #' @description Provides a full linear model test, with hypotheses, assumptions, a decision and a conclusion.
 #'
-#' @return
+#' @return Full Linear Model test report.
 #' @export
 #'
 #' @examples mylmtest(project)

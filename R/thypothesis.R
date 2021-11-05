@@ -3,7 +3,7 @@
 #' @param dataset The data set you are testing
 #' @description Prints the null and alternative hypotheses for the t-test.
 #'
-#' @return
+#' @return Hypotheses for the t-test.
 #' @export
 #'
 #' @examples thypothesis(project)

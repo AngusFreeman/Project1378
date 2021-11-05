@@ -10,7 +10,7 @@ myttest(dataset)
 \item{dataset}{The data set you wish to test}
 }
 \value{
-
+Full t-test report.
 }
 \description{
 Provides a full t-test, with hypotheses, assumptions, a decision and a conclusion.

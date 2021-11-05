@@ -3,7 +3,7 @@
 #' @param dataset The data set you wish to test
 #' @description Provides a full t-test, with hypotheses, assumptions, a decision and a conclusion.
 #'
-#' @return
+#' @return Full t-test report.
 #' @export
 #'
 #' @examples myttest(project)

@@ -10,7 +10,7 @@ lmfit(dataset)
 \item{dataset}{The data set you are testing}
 }
 \value{
-
+Relevent linear model statistics.
 }
 \description{
 Applies the linear model test and returns relevant ouput in a list.

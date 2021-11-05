@@ -10,7 +10,7 @@ mychitest(dataset)
 \item{dataset}{The data set you wish to test}
 }
 \value{
-
+Full Chi Squared test report.
 }
 \description{
 Provides a full chi squared test, with hypotheses, assumptions, a decision and a conclusion.

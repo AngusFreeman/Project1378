@@ -3,8 +3,9 @@
 #' @param dataset The data set you are testing
 #' @description Prints the assumptions for the Chi Squared test.
 #'
-#' @return
+#' @return The assumptions for the Chi Squared test.
 #' @export
+#' @importFrom stats chisq.test
 #'
 #' @examples chiassumptions(project)
 chiassumptions <- function(dataset) {

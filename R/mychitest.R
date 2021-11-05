@@ -3,7 +3,7 @@
 #' @param dataset The data set you wish to test
 #' @description Provides a full chi squared test, with hypotheses, assumptions, a decision and a conclusion.
 #'
-#' @return
+#' @return Full Chi Squared test report.
 #' @export
 #'
 #' @examples mychitest(project)

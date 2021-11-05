@@ -3,7 +3,7 @@
 #' @param dataset The data set you are testing
 #' @description Prints the null and alternative hypotheses for the linear model test.
 #'
-#' @return
+#' @return The hypotheses for the linear model test.
 #' @export
 #'
 #' @examples lmhypothesis(project)

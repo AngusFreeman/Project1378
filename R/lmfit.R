@@ -3,8 +3,10 @@
 #' @param dataset The data set you are testing
 #' @description Applies the linear model test and returns relevant ouput in a list.
 #'
-#' @return
+#' @return Relevent linear model statistics.
 #' @export
+#' @importFrom stats lm
+#' @importFrom stats confint
 #'
 #' @examples lmfit(project)
 lmfit <- function(dataset) {

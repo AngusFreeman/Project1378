@@ -3,7 +3,7 @@
 #' @param dataset The data set you are testing
 #' @description Prints the null and alternative hypotheses for the Chi Squared test.
 #'
-#' @return
+#' @return The hypothesis for the Chi Squared test.
 #' @export
 #'
 #' @examples chihypothesis(project)

@@ -10,7 +10,7 @@ chifit(dataset)
 \item{dataset}{The data set you are testing}
 }
 \value{
-
+Relevent Chi Statistics.
 }
 \description{
 Applies the chi squared test and returns relevant ouput in a list.

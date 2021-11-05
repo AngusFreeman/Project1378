@@ -3,8 +3,11 @@
 #' @param dataset The data set you are testing
 #' @description Prints the assumptions for the linear model test.
 #'
-#' @return
+#' @return The assumptions for the linear model test.
 #' @export
+#' @importFrom ggplot2 ggplot
+#' @importFrom ggplot2 aes
+#' @importFrom gridExtra grid.arrange
 #' @import ggplot2
 #'
 #' @examples lmassumptions(project)

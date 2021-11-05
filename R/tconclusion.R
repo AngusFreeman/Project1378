@@ -3,7 +3,7 @@
 #' @param dataset The data set you are testing
 #' @description Gives a conclusion for the t-test based upon the p-value obtained.
 #'
-#' @return
+#' @return Conclusion for the t-test.
 #' @export
 #'
 #' @examples tconclusion(project)

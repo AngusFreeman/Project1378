@@ -10,7 +10,7 @@ tassumptions(dataset)
 \item{dataset}{The data set you are testing}
 }
 \value{
-
+The assumptions for the t-test.
 }
 \description{
 Prints the assumptions for the t-test.

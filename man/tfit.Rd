@@ -10,7 +10,7 @@ tfit(dataset)
 \item{dataset}{The data set you are testing}
 }
 \value{
-
+Relevent t-test statistics.
 }
 \description{
 Applies the t-test and returns relevant ouput in a list.

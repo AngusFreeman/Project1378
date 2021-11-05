@@ -3,12 +3,13 @@
 #' @param dataset The data set you are testing
 #' @description Applies the t-test and returns relevant ouput in a list.
 #'
-#' @return
+#' @return Relevent t-test statistics.
 #' @export
+#' @importFrom  stats t.test
 #'
 #' @examples tfit(project)
 tfit <- function(dataset) {
-  tmodel <- t.test(filter(dataset, gender == "Female")$height, filter(dataset, gender == "Male")$height, var.equal = TRUE)
+  tmodel <- t.test(dplyr::filter(dataset, gender == "Female")$height, dplyr::filter(dataset, gender == "Male")$height, var.equal = TRUE)
 
   tfit1 <- list(
     tmodel[[1]],

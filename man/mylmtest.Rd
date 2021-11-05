@@ -10,7 +10,7 @@ mylmtest(dataset)
 \item{dataset}{The data set you wish to test}
 }
 \value{
-
+Full Linear Model test report.
 }
 \description{
 Provides a full linear model test, with hypotheses, assumptions, a decision and a conclusion.
